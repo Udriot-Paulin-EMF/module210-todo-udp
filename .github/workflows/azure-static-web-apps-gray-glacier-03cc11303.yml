@@ -55,7 +55,7 @@ jobs:
           # Opt-out of saving Lighthouse results as an action artifacts
           uploadArtifacts: true # optional
           # Name of the artifact group if using uploadArtifacts. default: lighthouse-results
-          artifactName: # optional, default is lighthouse-results
+          artifactName: lien# optional, default is lighthouse-results
           # 
           temporaryPublicStorage: true# optional
           # Number of runs to do per URL
@@ -69,7 +69,7 @@ jobs:
           # Basic auth password for LHCI server
           basicAuthPassword: # optional
           # Upload command extra arguments
-          uploadExtraArgs: # optional
+          uploadExtraArgs: 
           
 
 
@@ -84,6 +84,7 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GRAY_GLACIER_03CC11303 }}
           action: "close"
+
 
 
 
