@@ -47,7 +47,7 @@ jobs:
         uses: treosh/lighthouse-ci-action@v12
         with:
           # List of URL(s) to analyze
-          urls: # optional
+          urls: https://gray-glacier-03cc11303.2.azurestaticapps.net/# optional
           # Path to a Lighthouse budgets.json file
           budgetPath: # optional
           # Path to a LHCI lighthouserc.json file
@@ -84,5 +84,6 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GRAY_GLACIER_03CC11303 }}
           action: "close"
+
 
 
