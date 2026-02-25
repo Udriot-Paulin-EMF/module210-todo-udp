@@ -25,6 +25,6 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t ${{ env.REG_NAME }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+          docker build -t ${{ env.REG_NAME }}/${{ env.IMAGE_NAME }}:${{ github.sha }} ./src/backend
           docker push ${{ env.REG_NAME }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
 
