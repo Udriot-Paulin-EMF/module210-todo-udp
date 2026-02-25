@@ -53,11 +53,11 @@ jobs:
           # Path to a LHCI lighthouserc.json file
           configPath: # optional
           # Opt-out of saving Lighthouse results as an action artifacts
-          uploadArtifacts: # optional
+          uploadArtifacts: true # optional
           # Name of the artifact group if using uploadArtifacts. default: lighthouse-results
           artifactName: # optional, default is lighthouse-results
           # 
-          temporaryPublicStorage: # optional
+          temporaryPublicStorage: true# optional
           # Number of runs to do per URL
           runs: # optional
           # Address of a LHCI server
@@ -84,6 +84,7 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GRAY_GLACIER_03CC11303 }}
           action: "close"
+
 
 
 
