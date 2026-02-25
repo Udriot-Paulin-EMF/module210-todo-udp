@@ -51,7 +51,7 @@ jobs:
           # Path to a Lighthouse budgets.json file
           budgetPath: # optional
           # Path to a LHCI lighthouserc.json file
-          configPath: .\.lighthouserc.json
+          configPath: ./.lighthouserc.json
           # Opt-out of saving Lighthouse results as an action artifacts
           uploadArtifacts: true # optional
           # Name of the artifact group if using uploadArtifacts. default: lighthouse-results
